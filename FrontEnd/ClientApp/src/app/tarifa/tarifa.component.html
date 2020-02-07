@@ -1,0 +1,66 @@
+<div class="card-container">
+  <mat-card class="card form-container">
+    <form #form="ngForm">
+      <mat-card-title>
+        Calcular ligação
+      </mat-card-title>
+      <div class="form-group">
+        <mat-form-field class="field" appearance="outline">
+          <mat-label>DDD - Origem</mat-label>
+          <input name="origem" [(ngModel)]="requestTarifa.origem" matInput placeholder="11" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="field" appearance="outline">
+          <mat-label>DDD - Destino</mat-label>
+          <input name="destino" [(ngModel)]="requestTarifa.destino" matInput placeholder="16" required>
+        </mat-form-field>
+      </div>
+
+      <div class="form-group">
+        <mat-form-field class="field" appearance="outline">
+          <mat-label>Duração da chamada</mat-label>
+          <input name="tempo" [(ngModel)]="requestTarifa.tempo" matInput placeholder="30" required>
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+        <mat-form-field class="field">
+          <mat-label>Price type</mat-label>
+          <mat-select name="plano" [(ngModel)]="requestTarifa.plano" required>
+            <mat-option *ngFor="let p of planos" [value]="p.value">
+              {{p.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+        <button class="field" [disabled]="form.invalid" mat-button color="primary" (click)="getTarifa()">Calcular</button>
+    </form>
+  </mat-card>
+
+  <mat-card class="card">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Origem</th>
+          <th scope="col">Destino</th>
+          <th scope="col">Tempo</th>
+          <th scope="col">Plano</th>
+          <th scope="col">Com FaleMais</th>
+          <th scope="col">Sem FaleMais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{tarifa.origem}}</td>
+          <td>{{tarifa.destino}}</td>
+          <td>{{tarifa.tempo}}</td>
+          <td>{{tarifa.plano}}</td>
+          <td>{{tarifa.comFaleMais | currency: 'BRL'}}</td>
+          <td>{{tarifa.semFaleMais | currency: 'BRL'}}</td>
+        </tr>
+      </tbody>
+    </table>   
+  </mat-card>
+</div>

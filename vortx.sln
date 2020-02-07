@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vortx", "vortx\vortx.csproj", "{CDF8ED5B-A308-442E-B186-3EB2A6B6019C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaleMais.API", "FrontEnd\FaleMais.API.csproj", "{C6483ADF-10C1-4B1A-A528-BC0DCB733FB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaleMais.Infra", "FaleMais.Infra\FaleMais.Infra.csproj", "{319A85B2-8595-4F56-8E0B-F99702476C00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaleMais.Domain", "FaleMais.Domain\FaleMais.Domain.csproj", "{22813B1C-AF92-4B99-9BA8-3325861D4334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaleMais.InfraTests", "FaleMais.InfraTests\FaleMais.InfraTests.csproj", "{7928C6DE-7C53-4236-BBD0-074B3E484132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaleMais.DomainTests", "FaleMais.DomainTests\FaleMais.DomainTests.csproj", "{38795562-3B34-4870-A4EE-56432C0E8A57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +19,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CDF8ED5B-A308-442E-B186-3EB2A6B6019C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CDF8ED5B-A308-442E-B186-3EB2A6B6019C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CDF8ED5B-A308-442E-B186-3EB2A6B6019C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CDF8ED5B-A308-442E-B186-3EB2A6B6019C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6483ADF-10C1-4B1A-A528-BC0DCB733FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6483ADF-10C1-4B1A-A528-BC0DCB733FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6483ADF-10C1-4B1A-A528-BC0DCB733FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6483ADF-10C1-4B1A-A528-BC0DCB733FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319A85B2-8595-4F56-8E0B-F99702476C00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319A85B2-8595-4F56-8E0B-F99702476C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319A85B2-8595-4F56-8E0B-F99702476C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319A85B2-8595-4F56-8E0B-F99702476C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22813B1C-AF92-4B99-9BA8-3325861D4334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22813B1C-AF92-4B99-9BA8-3325861D4334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22813B1C-AF92-4B99-9BA8-3325861D4334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22813B1C-AF92-4B99-9BA8-3325861D4334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7928C6DE-7C53-4236-BBD0-074B3E484132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7928C6DE-7C53-4236-BBD0-074B3E484132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7928C6DE-7C53-4236-BBD0-074B3E484132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7928C6DE-7C53-4236-BBD0-074B3E484132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38795562-3B34-4870-A4EE-56432C0E8A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38795562-3B34-4870-A4EE-56432C0E8A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38795562-3B34-4870-A4EE-56432C0E8A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38795562-3B34-4870-A4EE-56432C0E8A57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
